@@ -20,6 +20,6 @@ public class 구명보트 {
         Arrays.sort(_over, Collections.reverseOrder());
         Arrays.sort(_less);
 
-        
+        return 1;
     }
 }
