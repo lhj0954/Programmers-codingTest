@@ -1,24 +1,28 @@
 package 코딩테스트연습.level1;
 
-public class 제일작은수제거하기 {
-    public static int[] solution(int[] arr) {
-        int[] answer = arr.clone();
+import java.util.ArrayList;
+import java.util.List;
 
-        for (int i = 0; i < answer.length; i++) {
-            for (int k = i; k < answer.length; k++) {
-                if (answer[i] < answer[k]) {
-                    int temp = answer[i];
-                    answer[i] = answer[k];
-                    answer[k] = temp;
+public class 제일작은수제거하기 {
+    public Object[] solution(int[] arr) {
+        if(arr.length == 1) {
+            return new Object[]{-1};
+        } else {
+            int small = arr[0];
+            for(int i : arr) {
+                if(small > i) {
+                    small = i;
                 }
             }
+
+            List<Integer> list = new ArrayList<>();
+            for(int i : arr) {
+                if(small != i) {
+                    list.add(i);
+                }
+            }
+
+            return list.toArray();
         }
-        return arr;
-    }
-
-    public static void main(String[] args) {
-        int[] arr = {6, 2, 23, 7, 15};
-
-        //solution();
     }
 }
