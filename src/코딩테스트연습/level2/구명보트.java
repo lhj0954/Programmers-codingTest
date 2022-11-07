@@ -4,22 +4,21 @@ import java.util.*;
 
 public class 구명보트 {
     public int solution(int[] people, int limit) {
-        List<Integer> over = new ArrayList<>();
-        List<Integer> less = new ArrayList<>();
+        int answer = 0;
 
-        for (int i : people) {
-            if (i > (limit / 2)) {
-                over.add(i);
-            } else {
-                less.add(i);
+        Arrays.sort(people);
+
+        int right = people.length - 1;
+        int left = 0;
+
+        while (right >= left) {
+            int weight = people[right--];
+            if (weight + people[left] <= limit) {
+                left++;
             }
+            answer++;
         }
 
-        Integer[] _over = over.toArray(new Integer[0]);
-        Integer[] _less = less.toArray(new Integer[0]);
-        Arrays.sort(_over, Collections.reverseOrder());
-        Arrays.sort(_less);
-
-        return 1;
+        return answer;
     }
 }
