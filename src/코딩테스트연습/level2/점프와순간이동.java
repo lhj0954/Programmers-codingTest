@@ -10,7 +10,6 @@ public class 점프와순간이동 {
             }
             n /= 2;
         }
-        이학준.info();
 
         return ans;
     }
