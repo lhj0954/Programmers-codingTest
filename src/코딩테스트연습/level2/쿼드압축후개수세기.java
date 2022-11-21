@@ -56,7 +56,7 @@ public class 쿼드압축후개수세기 {
 
             for(int i = 0; i < (arr.length / 2); i++) {
                 for(int j = 0; j < (arr.length / 2); j++) {
-                    temp[i][j] = arr[i][j + (arr.length) / 2];
+                    temp[i][j] = arr[i + (arr.length / 2)][j + (arr.length / 2)];
                 }
             }
             zip(temp);
