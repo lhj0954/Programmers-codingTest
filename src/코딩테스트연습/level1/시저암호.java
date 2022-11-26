@@ -1,7 +1,7 @@
 package 코딩테스트연습.level1;
 
 public class 시저암호 {
-    public static String solution(String s, int n) {
+    public String solution(String s, int n) {
         char[] arr = s.toCharArray();
 
         for (int i = 0; i < arr.length; i++) {
@@ -23,9 +23,5 @@ public class 시저암호 {
         }
 
         return new String(arr);
-    }
-
-    public static void main(String[] args) {
-        System.out.println(solution("a B z", 4));
     }
 }

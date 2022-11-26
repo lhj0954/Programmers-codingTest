@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Stack;
 
 public class 짝지어제거하기 {
-    public static int solution(String s) {
+    public int solution(String s) {
         int answer = 0;
         List<String> list = new ArrayList<>();
 
@@ -26,9 +26,5 @@ public class 짝지어제거하기 {
         }
 
         return answer;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(solution("baabaa"));
     }
 }

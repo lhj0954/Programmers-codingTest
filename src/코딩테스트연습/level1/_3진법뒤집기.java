@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class _3진법뒤집기 {
-    public static int solution(int n) {
+    public int solution(int n) {
         int answer = 0;
         int index = 1;
         List<Integer> list = new ArrayList<>();
@@ -21,7 +21,4 @@ public class _3진법뒤집기 {
         return answer;
     }
 
-    public static void main(String[] args) {
-        System.out.println(solution(45));
-    }
 }

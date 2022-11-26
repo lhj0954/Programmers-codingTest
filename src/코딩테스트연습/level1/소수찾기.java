@@ -1,7 +1,7 @@
 package 코딩테스트연습.level1;
 
 public class 소수찾기 {
-    public static boolean find(int m) {
+    public boolean find(int m) {
         boolean result = true;
 
         for(int i = 2; i <= Math.sqrt(m); i++) {
@@ -14,7 +14,7 @@ public class 소수찾기 {
         return result;
     }
 
-    public static int solution(int n) {
+    public  int solution(int n) {
         int answer = 0;
 
         for(int i = 2; i <= n; i++) {
@@ -24,9 +24,5 @@ public class 소수찾기 {
         }
 
         return answer;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(solution(5));
     }
 }

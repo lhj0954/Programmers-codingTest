@@ -3,7 +3,7 @@ package 코딩테스트연습.level1;
 import java.util.Arrays;
 
 public class 비밀지도 {
-    public static String[] solution(int n, int[] arr1, int[] arr2) {
+    public String[] solution(int n, int[] arr1, int[] arr2) {
         String[] answer = new String[n];
         String[][] map = new String[n][n];
 
@@ -42,11 +42,5 @@ public class 비밀지도 {
         System.out.println(Arrays.toString(answer));
 
         return answer;
-    }
-
-    public static void main(String[] args) {
-        int[] arr1 = {9, 20, 28, 18, 11};
-        int[] arr2 = {30, 1, 21, 17, 28};
-        solution(5, arr1, arr2);
     }
 }

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class 압축 {
-    public static Object[] solution(String msg) {
+    public Object[] solution(String msg) {
         List<Integer> answer = new ArrayList<>();
         List<String> dictionary = new ArrayList<>();
         char a = 'A';
@@ -30,9 +30,5 @@ public class 압축 {
             }
         }
         return answer.toArray();
-    }
-
-    public static void main(String[] args) {
-        System.out.println(Arrays.toString(solution("KAKAO")));
     }
 }

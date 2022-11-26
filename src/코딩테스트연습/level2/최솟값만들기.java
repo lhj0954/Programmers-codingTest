@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class 최솟값만들기 {
-    public static int solution(int []A, int []B) {
+    public int solution(int []A, int []B) {
         Arrays.sort(A);
         Arrays.sort(B);
         int answer = 0;
@@ -14,11 +14,5 @@ public class 최솟값만들기 {
         }
 
         return answer;
-    }
-
-    public static void main(String[] args) {
-        int[] A = {1,2};
-        int[] B = {3,4};
-        System.out.println(solution(A, B));
     }
 }

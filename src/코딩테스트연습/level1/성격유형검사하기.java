@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class 성격유형검사하기 {
-    public static String solution(String[] survey, int[] choices) {
+    public String solution(String[] survey, int[] choices) {
         StringBuilder answer = new StringBuilder();
         Map<String, Integer> chart = new HashMap<>();
         String[] index = {"R","T","C","F","J","M","A","N"};
@@ -61,12 +61,6 @@ public class 성격유형검사하기 {
         }
 
         return answer.toString();
-    }
-
-    public static void main(String[] args) {
-        String[] survey = {"AN", "CF", "MJ", "RT", "NA"};
-        int[] choices = {5, 3, 2, 7, 5};
-        System.out.println(solution(survey, choices));
     }
 }
 //rt/cf/jm/an

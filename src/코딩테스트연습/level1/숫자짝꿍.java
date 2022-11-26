@@ -3,7 +3,7 @@ package 코딩테스트연습.level1;
 import java.util.*;
 
 public class 숫자짝꿍 {
-    public static String solution(String X, String Y) {
+    public String solution(String X, String Y) {
         int[] numbers = new int[10];
         List<Integer> temp = new ArrayList<>();
 
@@ -35,9 +35,5 @@ public class 숫자짝꿍 {
             return answer.toString();
         }
 
-    }
-
-    public static void main(String[] args) {
-        System.out.println(solution("5525", "1255"));
     }
 }

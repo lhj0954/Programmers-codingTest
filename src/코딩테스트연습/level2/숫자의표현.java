@@ -1,7 +1,7 @@
 package 코딩테스트연습.level2;
 
 public class 숫자의표현 {
-    public static int solution(int n) {
+    public int solution(int n) {
         int answer = 0;
 
         for(int i = 1; i <= n/2; i++) {
@@ -18,9 +18,5 @@ public class 숫자의표현 {
         answer++; //자기자신
 
         return answer;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(solution(15));
     }
 }

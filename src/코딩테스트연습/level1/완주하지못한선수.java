@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class 완주하지못한선수 {
     static String  answer = "";
-    public static String solution(String[] participant, String[] completion) {
+    public String solution(String[] participant, String[] completion) {
         Map<String, Integer> map = new HashMap<>();
 
         for(String name : participant) {
@@ -27,11 +27,5 @@ public class 완주하지못한선수 {
         });
 
         return answer;
-    }
-
-    public static void main(String[] args) {
-        String[] par = {"leo", "kiki", "eden"};
-        String[] com = {"eden", "kiki"};
-        solution(par, com);
     }
 }

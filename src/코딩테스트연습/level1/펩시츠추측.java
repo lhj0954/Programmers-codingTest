@@ -23,12 +23,4 @@ public class 펩시츠추측 {
         }
 
     }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int n = sc.nextInt();
-
-        System.out.println(solution(n));
-    }
 }

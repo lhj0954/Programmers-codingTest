@@ -3,7 +3,7 @@ package 코딩테스트연습.level1;
 import java.util.Arrays;
 
 public class 다트게임 {
-    public static int solution(String dartResult) {
+    public int solution(String dartResult) {
         char[] shots = dartResult.toCharArray();
 
         StringBuilder value = new StringBuilder();
@@ -57,9 +57,5 @@ public class 다트게임 {
         }
 
         return arr_scores[0]+arr_scores[1]+arr_scores[2];
-    }
-
-    public static void main(String[] args) {
-        System.out.println(solution("1D#2S*3S"));
     }
 }

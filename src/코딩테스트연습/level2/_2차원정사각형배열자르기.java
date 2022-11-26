@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class _2차원정사각형배열자르기 {
-    public static Object[] solution(int n, long left, long right) {
+    public Object[] solution(int n, long left, long right) {
         List<Integer> answer = new ArrayList<>();
         int[][] arr_2 = new int[n][n];
         for(int i = 0; i < n; i++) {
@@ -30,9 +30,5 @@ public class _2차원정사각형배열자르기 {
         }
 
         return answer.toArray();
-    }
-
-    public static void main(String[] args) {
-        System.out.println(Arrays.toString(solution(4, 7, 14)));
     }
 }

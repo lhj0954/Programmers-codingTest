@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class 자연수뒤집어배열로만들기 {
-    static public long[] solution(long n) {
+    public long[] solution(long n) {
         long copy = n;
         int length = 0;
 
@@ -20,13 +20,5 @@ public class 자연수뒤집어배열로만들기 {
         }
 
         return answer;
-    }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        long n = sc.nextLong();
-
-        System.out.println(Arrays.toString(solution(n)));
     }
 }

@@ -1,7 +1,7 @@
 package 코딩테스트연습.level2;
 
 public class 다음큰숫자 {
-    public static int solution(int n) {
+    public int solution(int n) {
         int answer = (n + 1);
         int n_1_count = 0;
         for (; n > 0; n /= 2) {
@@ -26,9 +26,5 @@ public class 다음큰숫자 {
         }
 
         return answer;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(solution(15));
     }
 }

@@ -3,7 +3,7 @@ package 코딩테스트연습.level1;
 import java.util.*;
 
 public class 정수내림차순으로배치하기 {
-    static public long solution(long n) {
+    public long solution(long n) {
         List<Long> list = new ArrayList<>();
 
         for (; n != 0; n /= 10) {
@@ -22,12 +22,4 @@ public class 정수내림차순으로배치하기 {
         return Long.parseLong(answer.toString());
 
         }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        long n = sc.nextLong();
-
-        System.out.println(solution(n));
-    }
 }

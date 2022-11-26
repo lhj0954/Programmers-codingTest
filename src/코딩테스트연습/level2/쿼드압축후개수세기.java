@@ -69,13 +69,8 @@ public class 쿼드압축후개수세기 {
         }
 
     }
-    public static int[] solution(int[][] arr) {
+    public int[] solution(int[][] arr) {
         zip(arr);
         return new int[]{zero_count, one_count};
-    }
-
-    public static void main(String[] args) {
-        int[][] arr =  {{1, 1, 0, 0}, {1, 0, 0, 0}, {1, 0, 0, 1}, {1, 1, 1, 1}};
-        System.out.println(Arrays.toString(solution(arr)));
     }
 }

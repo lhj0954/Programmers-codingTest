@@ -1,7 +1,7 @@
 package 코딩테스트연습.level2;
 
 public class Jadencase문자열만들기 {
-    public static String solution(String s) {
+    public String solution(String s) {
         s = s.toLowerCase();
         StringBuilder answer = new StringBuilder(s);
 
@@ -21,10 +21,6 @@ public class Jadencase문자열만들기 {
         }
 
         return answer.toString();
-    }
-
-    public static void main(String[] args) {
-        System.out.println(solution("a aa"));
     }
 }
 //a aa,A Aa

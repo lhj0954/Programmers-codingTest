@@ -3,7 +3,7 @@ package 코딩테스트연습.level1;
 import java.util.regex.Pattern;
 
 public class 신규아이디추천 {
-    public static String solution(String new_id) {
+    public String solution(String new_id) {
         String level_1 = new_id.toLowerCase();
 
         String level_2 = level_1.replaceAll("[^\\w-_.]","");
@@ -32,9 +32,5 @@ public class 신규아이디추천 {
         }
 
         return level_7.toString();
-    }
-
-    public static void main(String[] args) {
-        System.out.println(solution(	"z-+.^."));
     }
 }

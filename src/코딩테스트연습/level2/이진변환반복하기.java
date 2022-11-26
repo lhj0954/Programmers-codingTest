@@ -3,7 +3,7 @@ package 코딩테스트연습.level2;
 import java.util.Arrays;
 
 public class 이진변환반복하기 {
-    public static int[] solution(String s) {
+    public int[] solution(String s) {
         int zero = 0;
         int count = 0;
         while(s.length() > 1) {
@@ -24,9 +24,5 @@ public class 이진변환반복하기 {
         }
 
         return new int[]{count, zero};
-    }
-
-    public static void main(String[] args) {
-        System.out.println(Arrays.toString(solution("110010101001")));
     }
 }

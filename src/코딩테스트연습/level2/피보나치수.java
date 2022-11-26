@@ -1,7 +1,7 @@
 package 코딩테스트연습.level2;
 
 public class 피보나치수 {
-    public static int solution(int n) {
+    public int solution(int n) {
         int[] f_arr = new int[n + 1];
         f_arr[0] = 0;
         f_arr[1] = 1;
@@ -11,9 +11,5 @@ public class 피보나치수 {
         }
 
         return f_arr[n];
-    }
-
-    public static void main(String[] args) {
-        System.out.println(solution(5));
     }
 }

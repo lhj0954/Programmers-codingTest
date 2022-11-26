@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class 모의고사 {
-    public static Integer[] solution(int[] answers) {
+    public Integer[] solution(int[] answers) {
         int[] count = new int[3];
         int[] first = new int[10000];
         int[] second = new int[10000];
@@ -45,10 +45,5 @@ public class 모의고사 {
 
         return list.toArray(new Integer[0]);
 
-    }
-
-    public static void main(String[] args) {
-        int[] answers = {1,2,3,4,5};
-        System.out.println(Arrays.toString(solution(answers)));
     }
 }

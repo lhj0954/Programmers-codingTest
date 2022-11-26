@@ -1,7 +1,7 @@
 package 코딩테스트연습.level1;
 
 public class 숫자문자열과영단어 {
-    public static int solution(String s) {
+    public int solution(String s) {
         String str;
         str = s.replace("zero", "0");
         str = str.replace("one", "1");
@@ -18,9 +18,5 @@ public class 숫자문자열과영단어 {
         str = str.replace("nine", "9");
 
         return Integer.parseInt(str);
-    }
-
-    public static void main(String[] args) {
-        solution("one4seveneight");
     }
 }

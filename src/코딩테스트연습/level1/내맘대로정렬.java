@@ -3,7 +3,7 @@ package 코딩테스트연습.level1;
 import java.util.Arrays;
 
 public class 내맘대로정렬 {
-    public static String[] solution(String[] strings, int n) {
+    public String[] solution(String[] strings, int n) {
         for (int i = 0; i < strings.length; i++) {
             StringBuilder str = new StringBuilder(strings[i].substring(n));
             str.insert(1, strings[i].substring(0, n));
@@ -23,10 +23,5 @@ public class 내맘대로정렬 {
         }
 
         return strings;
-    }
-
-    public static void main(String[] args) {
-        String[] strings = {"abce", "abcd", "cdx"};
-        System.out.println(Arrays.toString(solution(strings, 2)));
     }
 }

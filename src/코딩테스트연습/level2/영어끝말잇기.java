@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class 영어끝말잇기 {
-    public static int[] solution(int n, String[] words) {
+    public int[] solution(int n, String[] words) {
         List<String> used = new ArrayList<>();
         used.add(words[0]);
         int number = 0;
@@ -21,10 +21,5 @@ public class 영어끝말잇기 {
         }
 
         return new int[]{number, turn};
-    }
-
-    public static void main(String[] args) {
-        String[] words = {"hello", "one", "even", "never", "now", "world", "draw"};
-        System.out.println(Arrays.toString(solution(2, words)));
     }
 }
