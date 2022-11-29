@@ -20,6 +20,7 @@ public class 가장큰수 {
         if(answer.charAt(0) == '0') {
             answer = "0";
         }
+
         return answer;
     }
 }
