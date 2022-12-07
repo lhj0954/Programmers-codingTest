@@ -1,5 +1,7 @@
 package 코딩테스트연습.level2;
 
+import java.util.*;
+
 public class 수식최대화 {
     public long solution(String expression) {
         long answer = 0;
