@@ -8,7 +8,7 @@ public class 거리두기_확인하기 {
     static int[] _x = {1, -1, -1, 1};
     static int[] _y = {1, 1, -1, -1};
 
-    public static boolean check (List<Integer[]> positions, char[][] map) {
+    public  boolean check (List<Integer[]> positions, char[][] map) {
         for(Integer[] position : positions) {
             for(int i = 0; i < 4; i++) {
                 int temp_x = position[0] + x[i];
@@ -27,7 +27,7 @@ public class 거리두기_확인하기 {
                             temp_x--;
                             break;
                         case 1:
-                            temp_y++;
+                            temp_y--;
                             break;
                         case 2:
                             temp_x++;
@@ -74,7 +74,7 @@ public class 거리두기_확인하기 {
         return true;
     }
 
-    public static Object[] solution(String[][] places) {
+    public  Object[] solution(String[][] places) {
         List<Integer> answer = new ArrayList<>();
 
         for(int i = 0; i < places.length; i++) {
@@ -97,10 +97,5 @@ public class 거리두기_확인하기 {
         }
 
         return answer.toArray();
-    }
-
-    public static void main(String[] args) {
-        String[][] arr = {{"POOOP", "OXXOX", "OPXPX", "OOXOX", "POXXP"}, {"POOPX", "OXPXP", "PXXXO", "OXXXO", "OOOPP"}, {"PXOPX", "OXOXP", "OXPOX", "OXXOP", "PXPOX"}, {"OOOXX", "XOOOX", "OOOXX", "OXOOX", "OOOOO"}, {"PXPXP", "XPXPX", "PXPXP", "XPXPX", "PXPXP"}};
-        System.out.println(Arrays.toString(solution(arr)));
     }
 }
